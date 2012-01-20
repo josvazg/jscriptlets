@@ -1,0 +1,18 @@
+
+div.autocompleter {
+	display: none;
+	position: absolute;
+	border: 1px solid blue;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+div.autocompleter-over {
+	background-color: #F0F0FE;
+}
+
+div.autocompleter-selected {
+	background-color: blue;
+	color: white;
+}
