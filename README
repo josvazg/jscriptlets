@@ -1,0 +1,47 @@
+JScriptlets
+___________
+
+JScriptlets is a library of modular Javascript components.
+
+Why?
+
+I was sick and tired of reinventing the wheel every time I needed a particular small piece of 
+Javascript funcionality and using a full Prototype or JQuery library was not the solution for me.
+
+Why should always be the server side "the one that learns" and bends to the JS library needs 
+and not the oposite?
+
+When I needed small pieces of code to solve small concrete Browser-side problems without the fuss 
+and need to loading tons of code on a full featured library that neither you need, nor control, 
+nor have the time to learn completely.
+
+JScriptlets is a Modular Reference Code Library, you just get and use what you need, 
+when you need it, and forget about the rest.
+
+JScriptlets source code files follows some conventions to allow server side automatization. 
+In this way, the code can be used to generate Javascript code from the server programatically both 
+in a multibrowser manner (code that works on most browsers), or browser specific:
+
+ - JScriptlets source files come with the following header comment:
+
+  // jscriptletsample.js: Description goes here...
+  // some more description text here...
+  // Tested on: IE, WebKit, Mozilla <- This will inform which platforms the script is ok for
+  // Depends on: base/base.js, base/pos.js     <- comma separated list of other JScriptlets this
+  // otherpack/other.js <- can span many lines until the end of the comments
+ 
+  // This will be normal comment
+  ...
+
+ - JScriptlets filenames follow the format name+[.browserfamily]+".js". That is, an optional browser 
+family can be provided in order to specify that the file is browser specific. Otherwise the file is
+multibrowser and the "Tested on:" comment tells in which browser should it work.
+
+
+I hope this will make my and others life easier when generating automated Javascript user interfaces 
+and components from the server side code, being them more reusable and without reinventing the 
+wheel each time.
+
+This is, of course, completely OpenSource and any contributions (following this basic philosophy)
+are wellcome!
+
